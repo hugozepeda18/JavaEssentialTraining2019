@@ -5,13 +5,13 @@ public class Main {
     public static void main(String[] args) {
         String s1 = "Hello!";
         var s2 = "Hello!";
-
+        // Internally Java looks for the best way of creating the second string
         if (s1 == s2) {
             System.out.println("they match!");
         } else {
             System.out.println("they don't match!");
         }
-
+        // You cannot compare object. They do not point to the same object. 
         String s3 = new String("Hello!");
         String s4 = new String("Hello!");
         if (s3 == s4) {
